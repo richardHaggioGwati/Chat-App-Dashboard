@@ -13,7 +13,7 @@ import {
 	Menu,
 	MenuItem,
 } from '@mui/material';
-import theme from './Design/theme';
+import { theme } from './Design/theme';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
