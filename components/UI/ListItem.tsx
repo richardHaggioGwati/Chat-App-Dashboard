@@ -6,7 +6,6 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-
 import HomeIcon from '@mui/icons-material/Home';
 import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
 import GroupAddOutlinedIcon from '@mui/icons-material/GroupAddOutlined';
@@ -29,6 +28,7 @@ const ListItem: React.FC = () => {
 
 	return (
 		<Container>
+
 			<Box position="fixed">
 			<ListItemButton>
 				<ListItemIcon>
@@ -100,7 +100,6 @@ const ListItem: React.FC = () => {
 						</ListItemIcon>
 						<ListItemText primary='Agreement' />
 					</ListItemButton>
-
 				</Collapse>
 				</Box>
 		</Container>
