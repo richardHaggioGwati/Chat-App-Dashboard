@@ -26,6 +26,11 @@ const Post: React.FC = () => {
 							R
 						</Avatar>
 					}
+					action={
+						<IconButton aria-label='settings'>
+							<MoreVertIcon />
+						</IconButton>
+					}
 					title='Welcome!'
 					subheader='August 08, 2022'
 				/>

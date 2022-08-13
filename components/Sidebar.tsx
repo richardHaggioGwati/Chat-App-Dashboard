@@ -1,7 +1,9 @@
 import { Box } from "@mui/material";
 import ListItem from "./UI/ListItem";
 
+
 const Sidebar: React.FC = (customTheme, customMode ) => {
+
   return (
     <Box
       flex={1}
