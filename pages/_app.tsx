@@ -8,7 +8,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>Social Dashboard</title>
 				<meta name='description' content='Mimic a social app' />
-        <link rel='icon' href='/favicon.ico' />
+				<meta name="keywords" content="chat, social app, mui design" />
+				<meta name="author" content="R.G" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        		<link rel='icon' href='/king.png' />
 			</Head>
 			<Component {...pageProps} />
 		</>
