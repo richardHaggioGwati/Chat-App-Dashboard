@@ -42,11 +42,6 @@ const Navbar: React.FC = () => {
 		width: '40%',
 	});
 
-	const SearchIcons = styled(SearchOutlinedIcon)({
-		color: theme.palette.primary.main,
-		margin: '0 10px',
-	});
-
 	const IconContainer = styled(Box)(({ theme }) => ({
 		display: 'none',
 		alignItems: 'center',
