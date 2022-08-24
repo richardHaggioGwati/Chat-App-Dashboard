@@ -1,22 +1,21 @@
 import { useState } from 'react';
 
+import { styled } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import PetsIcon from '@mui/icons-material/Pets';
-import {
-	styled,
-	Typography,
-	Box,
-	InputBase,
-	Badge,
-	Avatar,
-	Menu,
-	MenuItem,
-} from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import InputBase from '@mui/material/InputBase';
+import Badge from '@mui/material/Badge';
+import Avatar from '@mui/material/Avatar';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
 import { theme } from './Design/theme';
+
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 const Navbar: React.FC = () => {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -28,8 +27,8 @@ const Navbar: React.FC = () => {
 
 	const handleClose = () => {
 		setAnchorEl(null);
-	}
-	
+	};
+
 	const StyledToolbar = styled(Toolbar)({
 		display: 'flex',
 		justifyContent: 'space-between',
@@ -59,7 +58,6 @@ const Navbar: React.FC = () => {
 			display: 'none',
 		},
 	}));
-
 
 	return (
 		<AppBar position='sticky'>
@@ -96,32 +94,31 @@ const Navbar: React.FC = () => {
 					<Typography variant='subtitle2'>John Doe</Typography>
 				</UserBox>
 				<Menu
-				sx={{
-					marginTop: '50px',
-					marginLeft: '1750px',
-					[theme.breakpoints.down('sm')]: {
-						marginLeft: '220px',	
-					}
-				}}
-				aria-labelledby='positioned-button'
-				anchorEl={anchorEl}
-				open={open}
-				onClose={handleClose}
-				anchorOrigin={{
-					vertical: 'top',
-					horizontal: 'left',
-				}}
-				transformOrigin={{
-					vertical: 'top',
-					horizontal: 'left',
-				}}
-			>
-				<MenuItem>Profile</MenuItem>
-				<MenuItem>My account</MenuItem>
-				<MenuItem>Logout</MenuItem>
-			</Menu>
+					sx={{
+						marginTop: '50px',
+						marginLeft: '1750px',
+						[theme.breakpoints.down('sm')]: {
+							marginLeft: '220px',
+						},
+					}}
+					aria-labelledby='positioned-button'
+					anchorEl={anchorEl}
+					open={open}
+					onClose={handleClose}
+					anchorOrigin={{
+						vertical: 'top',
+						horizontal: 'left',
+					}}
+					transformOrigin={{
+						vertical: 'top',
+						horizontal: 'left',
+					}}
+				>
+					<MenuItem>Profile</MenuItem>
+					<MenuItem>My account</MenuItem>
+					<MenuItem>Logout</MenuItem>
+				</Menu>
 			</StyledToolbar>
-
 		</AppBar>
 	);
 };
