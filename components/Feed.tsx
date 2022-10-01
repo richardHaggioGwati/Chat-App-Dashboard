@@ -9,6 +9,9 @@ const Feed: React.FC = () => {
 			<Post />
 			<Post />
 			<Post />
+			<Post />
+			<Post />
+			<Post />
 		</Box>
 	);
 };

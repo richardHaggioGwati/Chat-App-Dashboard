@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name="keywords" content="chat, social app, mui design" />
 				<meta name="author" content="R.G" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        		<link rel='icon' href='/king.png' />
+        		<link rel='icon' href='/king.svg' />
 			</Head>
 			<Component {...pageProps} />
 		</>
